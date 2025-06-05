@@ -15,17 +15,17 @@ url: "https://gerbil-chromatic.com" # the base hostname & protocol for your site
 timezone: America/Halifax
 # google_analytics: G-NNNNNNNNNN  // The former `UA-NNNNNNNN-N` format is no longer supported by Google
 
-title: Gerbil-Chromatic
+title: gerbil-chromatic
 author:
-   name: Brandon
-   email: brandon@gerbil-chromatic.com
+    name: Brandon
+    email: brandon@gerbil-chromatic.com
+    twitter: brandy3030
 
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  line in _config.yml.
  
 tagline: Short description
 
@@ -50,6 +50,7 @@ remote_theme: "jekyll/minima@0b7ca6b"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-remote-theme
 
 # Uncomment the following setting if you wish to disable deprecation warnings
@@ -125,3 +126,6 @@ minima:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+exclude:
+    - README.md
