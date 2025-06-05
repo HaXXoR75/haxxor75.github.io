@@ -1,0 +1,127 @@
+# Welcome to Jekyll!
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+
+# Site-wide settings
+# ------------------
+domain: "gerbil-chromatic.com"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://gerbil-chromatic.com" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: America/Halifax
+# google_analytics: G-NNNNNNNNNN  // The former `UA-NNNNNNNN-N` format is no longer supported by Google
+
+title: Gerbil-Chromatic
+author:
+   name: Brandon
+   email: brandon@gerbil-chromatic.com
+
+# The `>` after `description:` means to ignore line-breaks until next key. If
+#   you wish to omit the line-break after the end of text, use `>-` instead.
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+ 
+tagline: Short description
+
+#for jekyll-seo-tag
+twitter:
+  username: brandy3030
+  card: summary
+  
+logo: web-app-manifest-192x192.png
+
+#webmaster_verifications:
+#    google: 1234
+#    bing: 1234
+#    alexa: 1234
+#    yandex: 1234
+#    baidu: 1234
+#    facebook: 1234
+
+# Build settings
+# --------------
+remote_theme: "jekyll/minima@0b7ca6b"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Uncomment the following setting if you wish to disable deprecation warnings
+#   from newer versions of sass converter. Adapt as required.
+# sass:
+#   quiet_deps: true
+#   silence_deprecations: [import]
+
+
+# Minima-specific settings (applicable to Minima v3 and above only)
+# -----------------------------------------------------------------
+#  *All described config keys below should be nested under the top-level
+#   `minima` key.*
+#
+minima:
+    skin: dark
+
+#   Specific pages for site navigation.
+#     If you wish to link only specific pages in the site-navigation, use this
+#     and list the `path` property (as represented via Liquid) of the pages in
+#     the order they should be rendered.
+    nav_pages:
+        - about.md
+
+#   Set to `true` to show excerpts on the homepage.
+    show_excerpts: true
+
+#   Minima date format.
+#     The default value is "%b %d, %Y" (e.g. Nov 14, 2023).
+#     Refer to https://shopify.github.io/liquid/filters/date/ for valid values
+#   date_format: "%b-%d-%Y"
+
+#   Social Media Links.
+#     Renders icons via Font Awesome Free webfonts CDN, based on ordered list of
+#     entries. Valid entry keys:
+#       * title    Tooltip rendered on hovering over icon.
+#       * icon     Font Awesome icon id. `github` corresponds to `fa-github`.
+#       * url      Full URL of social profile.
+    social_links:
+        - title: HaXXoR75 at GitHub
+          icon: github
+          url: "https://github.com/HaXXoR75"
+        - title: brandon3030 at Discord
+          icon: discord
+          url: http://discord.com/users/192791634688081920
+        - title: Brandy3030 at X (formerly Twitter)
+          icon: x-twitter
+          url: "https://x.com/brandy3030"
+
+#   Hide syndication feed subscription link.
+#     RSS / Atom feed link is always rendered as the last item of social-links
+#     list. Set below key to `true` to not have the link to feed rendered as
+#     part of social-links list.
+#   hide_site_feed_link: false
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
