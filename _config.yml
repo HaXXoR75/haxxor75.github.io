@@ -13,7 +13,7 @@ domain: "gerbil-chromatic.com"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gerbil-chromatic.com" # the base hostname & protocol for your site, e.g. http://example.com
 timezone: America/Halifax
-# google_analytics: G-NNNNNNNNNN  // The former `UA-NNNNNNNN-N` format is no longer supported by Google
+google_analytics: G-QD9YZSGQL3
 
 title: gerbil-chromatic
 author:
