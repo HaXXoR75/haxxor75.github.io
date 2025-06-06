@@ -59,6 +59,8 @@ plugins:
 #   quiet_deps: true
 #   silence_deprecations: [import]
 
+feed:
+  posts_limit: 200
 
 # Minima-specific settings (applicable to Minima v3 and above only)
 # -----------------------------------------------------------------
@@ -73,6 +75,7 @@ minima:
 #     and list the `path` property (as represented via Liquid) of the pages in
 #     the order they should be rendered.
     nav_pages:
+        - categories.md
         - about.md
 
 #   Set to `true` to show excerpts on the homepage.
