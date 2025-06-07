@@ -132,3 +132,4 @@ minima:
 
 exclude:
     - README.md
+    - .github/
