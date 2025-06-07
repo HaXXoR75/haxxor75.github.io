@@ -96,12 +96,9 @@ minima:
         - title: HaXXoR75 at GitHub
           icon: github
           url: "https://github.com/HaXXoR75"
-        - title: brandon3030 at Discord
-          icon: discord
-          url: http://discord.com/users/192791634688081920
-        - title: Brandy3030 at X (formerly Twitter)
-          icon: x-twitter
-          url: "https://x.com/brandy3030"
+#        - title: Brandy3030 at X (formerly Twitter)
+#          icon: x-twitter
+#          url: "https://x.com/brandy3030"
 
 #   Hide syndication feed subscription link.
 #     RSS / Atom feed link is always rendered as the last item of social-links
