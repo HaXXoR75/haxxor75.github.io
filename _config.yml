@@ -12,6 +12,7 @@
 domain: "gerbil-chromatic.com"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gerbil-chromatic.com" # the base hostname & protocol for your site, e.g. http://example.com
+permalink: /:year/:month/:day/:title:output_ext #override global permalink style to remove categories
 timezone: America/Halifax
 google_analytics: G-QD9YZSGQL3
 

@@ -1,8 +1,8 @@
 ---
 layout: page
-category: ss3d
-title: "Category: SS3D"
-permalink: /categories/ss3d
+category: eyasoft
+title: "Category: EyaSoft"
+permalink: /categories/eyasoft
 ---
 
 {% for p in site.categories[page.category] %}

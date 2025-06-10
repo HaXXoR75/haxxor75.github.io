@@ -1,6 +1,6 @@
 ---
 layout: page
-category: update
+category: other
 title: "Category: Other"
 permalink: /categories/other
 ---

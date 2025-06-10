@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World"
 date:   2025-06-09 13:23:00 -0300
-tags: other eyasoft
+categories: other eyasoft
 ---
 Hello World! This blog was created largely as a place to ramble on about several games originally produced by Eya Interactive, later known as EyaSoft, a now long defunct Korean MMO developer, and my findings and observations while working with their codebases.
 
