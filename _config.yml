@@ -25,7 +25,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
 description: >- # this means to ignore newlines until "baseurl:"
-  Adventures in C++ coding, reverse engineering, programming WTFs and general foolishness that seemed interesting at the time.
+  Adventures in C++ coding, reverse engineering, programming WTFs and whatever general foolishness seems interesting at the time.
  
 tagline: coding-adventures
 
@@ -130,3 +130,5 @@ minima:
 exclude:
     - README.md
     - .github/
+    - Gemfile
+    - Gemfile.lock
