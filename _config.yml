@@ -25,10 +25,9 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key. If
 #   you wish to omit the line-break after the end of text, use `>-` instead.
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml.
+  Adventures in C++ coding, reverse engineering, programming WTFs and general foolishness that seemed interesting at the time.
  
-tagline: Short description
+tagline: coding-adventures
 
 #for jekyll-seo-tag
 twitter:
