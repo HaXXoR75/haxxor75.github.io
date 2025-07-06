@@ -9,7 +9,7 @@ This post serves as an overview of all of the custom filetypes SS3D makes use of
 ## \*.ANM
 ANM files store an animation, typically for a specific MOD file, and the only way to generate them is using SS3D's vintage 3DSMax8 exporters.
 
-## \*.BIN
+## [\*.BIN]({% post_url 2025-07-06-bin-files %})
 BIN files are one of the most widespread file types, used to store just about everything, from item names to quest scripts, dialog strings to server IPs, and much more. In the earliest versions of Mosiang, these were just .txt files instead, and at their core they continue to be just text files, encoded to prevent modification. Being text files means the data within can, and does, take just about any shape you can imagine, from simple lists, to complex XML like quest scripting syntax. Their actual format on-disk varies through the years, starting with a simple binary encoding in the first games, and eventually adding an AES encryption layer on top of that. Depending on what region they were intended for and when, their contents may be ASCII, or they may be multi-byte wide chars, more commonly known as UTF16, to allow them to store various non-English characters.
 
 ## \*.BEFF, \*.BEFL, \*.BMHM, \*.BSAD
