@@ -46,7 +46,7 @@ logo: favicon/web-app-manifest-192x192.png
 
 # Build settings
 # --------------
-remote_theme: "jekyll/minima@0b7ca6b"
+remote_theme: "jekyll/minima@1fe0fbf"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
