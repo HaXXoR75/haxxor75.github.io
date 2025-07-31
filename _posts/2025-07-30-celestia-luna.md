@@ -2,7 +2,9 @@
 layout: post
 title:  "Celestia LUNA: The Black Sheep"
 date:   2025-07-30 14:27:00 -0300
-categories: other eyasoft ss3d
+categories: eyasoft ss3d luna-clients
+modified_date: 2025-07-31 14:13:00 -0300
+last_modified_at: 2025-07-31 14:13:00 -0300
 ---
 If you've been reading along post by post, you may have noticed a certain fairly well known LUNA private server is missing from both the [PAK]({% post_url 2025-06-29-pak-files%}) and [BIN]({% post_url 2025-07-06-bin-files%}) file posts. That server, Celestia LUNA, is just different enough, and with just enough history behind it, that it deserves its own post and some closer examination.
 
@@ -17,6 +19,16 @@ What we do know now however, is that there was in fact a copy of the LUNA Online
 It was this fact, of having seemingly obtained access to a code base many would have paid a lot for, if only they had known it was available, that this post's title originates from. Celestia LUNA became THE server to beat, the one everyone tried to imitate, or in many cases, directly copy. Some quietly resented Celestia LUNA for not releasing the code for the larger community to benefit from. As their popularity grew, so did the number of people trying to rip off their work. This resulted in Celestia going to fairly great lengths to protect their clients, with varying degrees of success. Earlier versions used a product called MoleBox to protect the main client EXE and the engine files from tampering or inspection, while later versions use Themida for the same purpose. Later versions of Celestia, from approximately mid 2014 onward, also encrypt both their BIN and PAK files, although unlike essentially every single other LUNA server, they didn't use EyaSoft's AES implementation because after all, their source predated it, how could they? Instead, they came up with their own solutions, with both PAK and BIN files being encrypted.
 
 Both the BIN and PAK files are encrypted with xSalsa20Poly1305, likely using the NaCL library, although potentially using LibSodium instead, the latter would have been quite new at the time this encryption was introduced, making it possible but less likely. The BIN files are also compressed using LZ4 before they are encrypted, massively decreasing the on disk file sizes of all the BIN files, allowing Celestia to be one of the most compact clients around. This combination of compression, followed by encryption, contained within a Themida protected client, results in a very difficult time for anyone trying to reverse engineer what is going on.
+
+The PAK and BIN files both share the same xSalsa20Poly1305 key. It likely would have been a better idea on Celestia's part to use a different key for each file type, to raise the bar slightly by making anyone attempting to reverse engineer the client and find the key, have to do so twice. Once the use of xSalsa20Poly1305 has been identified, and you've realized that essentially means they must be using NaCL or LibSodium, the only major libraries defaulting to that particular combo, makes finding the key fairly simple, as we know the function signature of the decryption function, letting you locate the key with IDA fairly simply. The decryption key below, is a 32 byte array of unsigned chars (as required by NaCL), despite being chars it does not appear to be valid text, and was likely randomly generated initially. It also does not contain a null terminator and as such should not be handled by anything expecting an actual valid char array.
+
+```cpp
+unsigned char celestia_key[32] = {
+	0x6C, 0xBD, 0x98, 0x4C, 0xD0, 0x28, 0x3E, 0x4C,
+	0x8B, 0x28, 0x47, 0xCD, 0xCB, 0xB0, 0xB4, 0xDA,
+	0xDF, 0xB2, 0x5D, 0xAD, 0x1E, 0x24, 0xE4, 0xB3,
+	0x5D, 0xC9, 0x42, 0x24, 0xB5, 0xCE, 0x59, 0x5B };
+```
 
 ## \*.BIN Files
 Celestia's BIN file format looks the same as any other at first glance, although anyone trying to decrypt it with the standard EyaSoft BIN code is going to have a very bad time. Its apparent layout, shown bellow, is the same as a normal BIN file. The only difference at first glance is their BIN version, `20140615` not being one of the standard EyaSoft versions. It does appear to be date based like the originals, giving us an idea as to when they began using this protection system.
