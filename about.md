@@ -14,4 +14,4 @@ Want to support what I'm doing for some reason? Click the button below!
 &nbsp;
 &nbsp;
 
-Disclaimer: Any opinions that I express are my own, and are not related to or endorsed by my employers, past or present.
+Disclaimer: The views expressed in this blog are my own and do not reflect those of my current or former employers. All content contained within is intended solely for educational and video game preservation purposes, and is not meant to encourage or endorse any unauthorized or unlawful activity.

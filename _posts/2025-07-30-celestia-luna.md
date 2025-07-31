@@ -2,7 +2,7 @@
 layout: post
 title:  "Celestia LUNA: The Black Sheep"
 date:   2025-07-30 14:27:00 -0300
-categories: eyasoft ss3d luna-clients
+categories: eyasoft luna-clients
 modified_date: 2025-07-31 14:13:00 -0300
 last_modified_at: 2025-07-31 14:13:00 -0300
 ---
