@@ -4,7 +4,7 @@ title:  "Strange Connections"
 date:   2025-09-10 14:25:00 -0300
 categories: eyasoft luna-clients
 ---
-As mentioned in the [previous post]({% post_url 2025-09-09-client-archiving%}), I regularly look for new LUNA servers, and archive their installers and any patches available, to preserve any unique assets they might contain. If you want more details on that process, read the previous post HERE. That post started out as an introduction for this one, and spiraled out of control into its own article length thing, as these posts sometimes do.
+As mentioned in the [previous post]({% post_url 2025-09-09-client-archiving%}), I regularly look for new LUNA servers, and archive their installers and any patches available, to preserve any unique assets they might contain. If you want more details on that process, read the previous post. That post started out as an introduction for this one, and spiraled out of control into its own article length thing, as these posts sometimes do.
 
 This one started out a bit differently then most, in that the server I was looking into, wasn't new per say, but a relaunch of a previous server, that had, to my knowledge, been closed for about a year at this point. While not unheard of, this doesn't happen very often in the private server world, or atleast not with LUNA. While servers do come and go, they tend to get new names each time, and frequently different GM teams / front end staff, even if the developers behind the scenes stay the same. So this server, being named after a now dead server with `V2` thrown on the end, was interesting already.
 
